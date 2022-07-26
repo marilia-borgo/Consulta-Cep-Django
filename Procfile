@@ -1,1 +1,1 @@
-web: gunicorn nome_projetoMain.wsgi
+web: gunicorn cep_consulta.wsgi
