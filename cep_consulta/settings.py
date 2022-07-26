@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eel4t=!0ez_*@4d^_b_rni=^4g*q2xoi-n%y6&73wh7vll6=b8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://verificar-cep-django.herokuapp.com/']
 
 
 # Application definition
