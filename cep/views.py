@@ -3,7 +3,6 @@ import requests
 
 
 def receceCep (request):
-    print("teste")
     if request.method == 'GET' and 'cep' in request.GET: #se recebeu algum cep por get
         cep = request.GET['cep']
         print(request)
@@ -17,7 +16,7 @@ def receceCep (request):
             if ("erro" in json):
                 response = "CEP inexistente."
             elif (res.status_code==requests.codes.ok):
-                response = "O endereço do CEP {} é:".format(cep)
+                response = f"O endereço do CEP {cep} é:".format(cep)
                 response += "\n{} - {}, {} - {}.".format(json["logradouro"], json["bairro"], json["localidade"], json["uf"])
             else:
                 response = "Problema com a requisição, tente novamente."
