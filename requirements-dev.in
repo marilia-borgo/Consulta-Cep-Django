@@ -1,0 +1,8 @@
+-r requirements.in
+
+pytest-django
+flake8
+psycopg2-binary
+pip-tools
+
+
